@@ -2,43 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agrosvit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Web-Studio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html">Agrosvit</a>
-        <ul>
-          <li><a href="">Соя</a></li>
-          <li><a href="">Пшениця</a></li>
-          <li><a href="">Кукурудза</a></li>
-        </ul>
-      </nav>
+  <body class="body">
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navig">
+          <a
+            href="https://ramirmiller.github.io/goit-markup-hw-04/"
+            class="logo"
+          >
+            Agro<span class="logo-web-h">Svit</span></a
+          >
+          <ul class="navig-list">
+            <li class="page-nav">
+              <a class="page-nav-link page-nav-oen hover" href="./index.html"
+                >Насіння</a
+              >
+            </li>
+            <li class="page-nav">
+              <a class="page-nav-link page-nav-oen hover" href="./index.html"
+                >Добрива</a
+              >
+            </li>
+            <li class="page-nav">
+              <a class="page-nav-link" href="">Засоби Захисту Рослин</a>
+            </li>
+            <li class="page-nav">
+              <a class="page-nav-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="header-contact-list">
+            <li>
+              <a href="mailto:tovagrosvit1999@ukr.net" class="address-link"
+                >tovagrosvit1999@ukr.net</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380987937733" class="address-link"
+                >+38(098)7937733</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
-    <adres>
-      <ul>
-        <li><a href="">tovagrosvit1999@ukr.net</a></li>
-        <li><a href="">+38(098)7937733</a></li>
-      </ul>
-    </adres>
+    <main>
+      <section class="section-oen section">
+        <div class="container">
+          <h1 class="page-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="butt">Order Service</button>
+        </div>
+      </section>
 
-    <!-- Recipe page markup -->
-    <h1>Sweet cheese pancakes</h1>
-    <img
-      src="images/soyagrine1.jpg"
-      alt="Sweet cheese pancakes served with berries"
-    />
-    <p>
-      A light and gently sweet breakfast dish or a dessert for picky eaters.
-      With crispy coating and the light and soft inside, you get a lovely
-      balance of flavors and textures.These delicious pancakes pair perfectly
-      with sour cream and fruit in pretty much any form.
-    </p>
-    <a href="https://instagram.com/goitclub" target="_blank">
-      Author's profile
-    </a>
+      <section>
+        <h2>Розширте свій потенціал врожайності</h2>
+        <p>
+          Соєві боби Asgrow ® Roundup Ready 2 Xtend ® містять 100% ексклюзивну
+          генетику, яка не зрівнялася з жодною іншою маркою. Це перевага, яка
+          ставить Asgrow попереду інших брендів насіння, і завдяки цьому ми
+          можемо постійно пропонувати таким фермерам, як ви, найкращий потенціал
+          урожайності.
+        </p>
+
+        <h2>Максимальний контроль бур'янів</h2>
+        <p>
+          Соєві боби Roundup Ready 2 Xtend ® є частиною системи Roundup Ready
+          Xtend Crop System, яка знищує більше бур’янів, ніж будь-яка інша
+          система вирощування сої.
+        </p>
+      </section>
+
+      <img
+        src="images/soyagrine1.jpg"
+        alt="Sweet cheese pancakes served with berries"
+        width="600"
+      />
+    </main>
   </body>
 </html>
