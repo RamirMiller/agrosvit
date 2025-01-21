@@ -64,7 +64,7 @@ button {
   flex-direction: row;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  background: #0ae73a;
+  background: linear-gradient(#1bacf0, #acd8e9 35% 55%);
 }
 
 .header-container {
@@ -167,11 +167,12 @@ button {
   color: #7beee8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  text-shadow: 3px 3px 2px rgba(247, 14, 150, 0.55);
 }
 
 .page-nav-link-dobriva {
   background-image: url(../images/dobriva.jpg);
-
+  border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -180,7 +181,7 @@ button {
 
 .page-nav-link-nas {
   background-image: url(../images/soya-nas.jpg);
-
+  border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -189,33 +190,12 @@ button {
 
 .page-nav-link-zzr {
   background-image: url(../images/zzr.jpg);
+  border-radius: 8px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-}
-
-.page-nav-oen::after {
-  display: flex;
-  content: "";
-  border-radius: 2px;
-  width: 48px;
-  height: 4px;
-
-  position: absolute;
-  bottom: -1px;
-}
-
-.page-nav-oen:hover:after {
-  display: flex;
-  content: "";
-  border-radius: 3px;
-  width: 48px;
-  height: 4px;
-  background: #e90e0e;
-  position: absolute;
-  bottom: -1px;
 }
 
 ===============Section 1 ===================== .section {
@@ -226,13 +206,9 @@ button {
   max-width: 1440px;
   background: #2e2f42;
   padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/soya3.jpg);
+  background-image: url(../images/soyagrine1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   margin: 0 auto;
 }
@@ -247,11 +223,12 @@ button {
   font-size: 50px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #dd1010;
+  color: hsl(64, 90%, 51%);
   align-items: center;
   margin: 0 auto 48px;
   align-content: center;
   text-transform: uppercase;
+  text-shadow: 4px 4px 4px rgba(247, 16, 8, 0.884);
 }
 
 .butt {
@@ -279,7 +256,7 @@ button {
   background-color: #404bbf;
 }
 
-/*===============Section 2 =====================
+===============Section 2 =====================
 
 .visually-hidden {
   position: absolute;
@@ -308,8 +285,12 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 1128px;
-  height: 104px;
+  
+}
+
+.section-two-text {
+  display: flex;
+  background: #f4f4fd;
 }
 
 .section-two-item {
