@@ -12,7 +12,7 @@ body {
   color: #434455;
   background-color: #ffffff;
   font-size: 16px;
-  line-height: 1,5;
+  line-height: 1, 5;
 }
 
 /* Стилі для обнулення відступів у елементів */
@@ -81,13 +81,13 @@ button {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 25px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  margin-right: 76px;
+  margin-right: 15px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -113,13 +113,13 @@ button {
 .header-contact-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 8px;
   padding: 24px 0;
 }
 
 .logo-web-h {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 800;
+  font-size: 25px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2e2f42;
@@ -140,8 +140,8 @@ button {
 }
 
 .address-link {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -152,9 +152,7 @@ button {
 .address-link:hover,
 .address-link:focus {
   color: #da4011;
-  
 }
-
 
 .page-nav-link {
   font-weight: 500;
@@ -165,7 +163,6 @@ button {
   padding: 24px 0;
   display: block;
   position: relative;
-  
 }
 
 .page-nav-oen {
@@ -173,7 +170,6 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   text-shadow: 3px 3px 2px rgba(247, 14, 150, 0.55);
-  
 }
 
 .page-nav-link-dobriva {
@@ -207,7 +203,7 @@ button {
 }
 
 .page-nav-link-zzr {
-  background-image: url(../images/zzr.jpg);
+  background-image: url(../images/dron2.jfif);
   border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
@@ -221,7 +217,9 @@ button {
   text-shadow: 4px 4px 4px rgba(19, 18, 18, 0.884);
 }
 
-===============Section 1 ===================== .section {
+/*===============Section 1 ===================== */
+
+.section {
   padding: 0 156px;
 }
 
@@ -292,8 +290,13 @@ button {
   text-indent: 25px;
 }
 
+.logo-rrxtend {
+  color: #ffeb3b;
+  text-shadow: 6px 6px 6px rgba(151, 4, 4, 0.884);
+  text-transform: uppercase;
+}
 
-===============Section 2 =====================
+/*===============Section 2 ===================== */
 
 .visually-hidden {
   position: absolute;
@@ -309,87 +312,69 @@ button {
 }
 
 .section-two {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  max-width: 1440px;
+  height: 600px;
+
+  padding: 8px 0;
+  background-image: url(../images/soya3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
-.description {
+.section-two-block-list {
   display: flex;
-  gap: 24px;
-}
-
-.section-two-block {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  
-}
-
-.section-two-text {
-  display: flex;
-  background: #f4f4fd;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  gap: 20px;
+  list-style: none;
+  border: #1bacf0;
+  padding: 5px;
+  flex-grow: 1;
 }
 
 .section-two-item {
-  width: calc((100% - 3 * 24px) / 4);
-  display: flex;
+  width: calc((100% - 3 * 24px) / 3);
+
   justify-content: center;
   flex-direction: column;
-}
-
-.section-two-icon-background {
-  display: flex;
-  margin-bottom: 8px;
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-two-icon {
-  display: flex;
-  z-index: 11;
-  fill: none;
-}
-
-.section-two-title {
-  display: flex;
-  font-family: "Roboto" sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.section-two-title-bottom {
-  margin-bottom: 8px;
+  outline: 2px solid white;
+  flex-grow: 3;
 }
 
 .section-two-text {
   font-family: "Pattaya" sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 30px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  text-align: justify;
+  color: #f0f0f3;
   text-indent: 24px;
-  
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.984);
 }
 
 .section-two-h-oen {
+  display: block;
+  align-items: flex-start;
   font-family: "Rubik Beastly", serif;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 400;
   font-style: italic;
   color: #04612e;
-  Font: Roboto;
+  font: Roboto;
+  margin-top: 0;
+  flex-grow: 3;
+}
 
+.rr2x-icon {
+  width: 300px;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+.logo-rr2x {
 }
 
 .box {
@@ -404,10 +389,73 @@ button {
 .box:hover {
   border-color: cyan;
 }
-.address {
+
+/* =================section-three=================================*/
+
+.section-three {
+  max-width: 1440px;
+  padding: 8px 0;
+  /*background-image: url(../images/soyagrine1.jpg); */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  margin: 0 auto;
 }
-.header-contact-list {
+.container {
 }
-.address-link {
+.section-three-block-list {
 }
----------------------------------------------*/
+.section-three-items {
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.benefits .item {
+  width: calc((100% - 32px) / 3);
+}
+
+.item {
+  border: 2px solid rgb(245, 5, 5);
+}
+
+.wrap {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  outline: 2px solid #2e2f42;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.block {
+  width: 150px;
+  height: 150px;
+  color: #acd8e9;
+  border: 2px solid rgb(245, 5, 5);
+}
+.first {
+  background-color: #22d60a;
+}
+.second {
+  background-color: chocolate;
+  flex-grow: 3;
+}
+.thirdht {
+  background-color: aqua;
+}
+
+.forth {
+  background-color: #f1091d;
+  flex-grow: 5;
+}
