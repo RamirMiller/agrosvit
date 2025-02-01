@@ -61,6 +61,9 @@ button {
   background-color: E7E9FC;
   border-bottom: 1px solid #17c063;
   display: flex;
+  max-width: 1440px;
+  height: 110px;
+  margin: 0 auto;
   flex-direction: row;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -220,18 +223,23 @@ button {
 /*===============Section 1 ===================== */
 
 .section {
-  padding: 0 156px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .section-oen {
   max-width: 1440px;
   background: #2e2f42;
-  padding: 188px 0;
+  padding: 100px 0;
   background-image: url(../images/soyagrine1.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   margin: 0 auto;
+  background-color: #0a4b04;
 }
 
 .effective {
@@ -260,7 +268,7 @@ button {
   color: #fff;
   background: #1840f1;
   padding: 16px, 32px, 16px, 32px;
-  border-radius: 4px;
+  border-radius: 20px;
 
   min-width: 169px;
   height: 56px;
@@ -274,7 +282,7 @@ button {
 .butt:hover,
 .butt:focus {
   color: #fff;
-  background-color: #22d60a;
+  background-color: #117504;
 }
 .butt:active {
   color: #fff;
@@ -282,18 +290,46 @@ button {
 }
 
 .smalltalk {
-  font-size: 28px;
+  font-size: 38px;
   align-items: center;
+  text-align: justify;
   color: #fcfeff;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.884);
-  padding: 20px;
+  padding: 30px;
   text-indent: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .logo-rrxtend {
   color: #ffeb3b;
   text-shadow: 6px 6px 6px rgba(151, 4, 4, 0.884);
   text-transform: uppercase;
+}
+
+.sistem-rr2x-bord {
+  max-width: 1440px;
+  height: 250px;
+}
+
+.sistem-rr2x-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sistem-rr2x-item-first {
+  object-fit: fill;
+  max-width: 390px;
+  position: sticky;
+}
+.sistem-rr2x-item {
+  max-width: 420px;
+}
+
+.sistem-rr2x-item-last {
 }
 
 /*===============Section 2 ===================== */
@@ -327,25 +363,27 @@ button {
   justify-content: space-between;
   align-items: center;
   align-content: space-between;
-  gap: 20px;
+  gap: 50px;
   list-style: none;
   border: #1bacf0;
   padding: 5px;
-  flex-grow: 1;
 }
 
 .section-two-item {
   width: calc((100% - 3 * 24px) / 3);
-
   justify-content: center;
   flex-direction: column;
   outline: 2px solid white;
+}
+
+.section-two-items-text {
   flex-grow: 3;
+  margin-left: auto;
 }
 
 .section-two-text {
   font-family: "Pattaya" sans-serif;
-  font-weight: 600;
+
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -401,12 +439,19 @@ button {
   background-size: cover;
   margin: 0 auto;
 }
-.container {
-}
+
 .section-three-block-list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.section-three-items-foto {
+  width: 900px;
 }
 .section-three-items {
 }
+
+/* =================section-three=================================*/
 
 .benefits {
   display: flex;
@@ -437,12 +482,14 @@ button {
   align-items: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  gap: 5px;
 }
 .block {
   width: 150px;
   height: 150px;
   color: #acd8e9;
   border: 2px solid rgb(245, 5, 5);
+  width: calc((100% - 10px * 4) / 3);
 }
 .first {
   background-color: #22d60a;
