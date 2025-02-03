@@ -564,6 +564,53 @@ button {
   transform: rotate(180deg);
 }
 
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #212121;
+  max-width: 300px;
+}
+
+.form-button {
+  align-self: flex-start;
+}
+
+.form-input {
+  padding: 4px;
+  color: #212121;
+  border: 1px solid #212121;
+  border-radius: 4px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input:hover::placeholder, 
+input:focus::placeholder {
+  color:orange;
+}
+
+input:placeholder-shown {
+  border-color: blue;
+}
+
+form:focus-within {
+  border-color: blue;
+}
+
+
 /*
 body777 {
   background-color: #fff;
