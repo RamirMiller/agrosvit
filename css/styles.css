@@ -157,6 +157,12 @@ button {
   color: #da4011;
 }
 
+.page-nav {
+  transition: tranform 1000ms;
+  
+
+}
+
 .page-nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -188,6 +194,11 @@ button {
   font-weight: 900;
   text-transform: uppercase;
   text-shadow: 4px 4px 4px rgba(19, 18, 18, 0.884);
+  box-shadow: 7px 7px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.page-nav-link-dobriva:hover {
+  transform: scale(1.2);
 }
 
 .page-nav-link-nas {
@@ -203,7 +214,13 @@ button {
   font-weight: 900;
   text-transform: uppercase;
   text-shadow: 4px 4px 4px rgba(19, 18, 18, 0.884);
+  box-shadow: 7px 7px 20px 5px rgba(0, 0, 0, 0.5);
 }
+.page-nav-link-nas:hover {
+  
+  transform: scale(1.2);
+}
+
 
 .page-nav-link-zzr {
   background-image: url(../images/dron2.jfif);
@@ -217,8 +234,15 @@ button {
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
-  text-shadow: 4px 4px 4px rgba(19, 18, 18, 0.884);
+  text-shadow: 4px 4px 4px rgba(12, 1, 1, 0.884);
+  box-shadow: 7px 7px 20px 5px rgba(0, 0, 0, 0.5);
 }
+
+.page-nav-link-zzr:hover {
+ transform: scale(1.2);
+}
+
+
 
 /*===============Section 1 ===================== */
 
@@ -262,13 +286,14 @@ button {
 
 .butt {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   background: #1840f1;
   padding: 16px, 32px, 16px, 32px;
   border-radius: 20px;
+  display: flex;
 
   min-width: 169px;
   height: 56px;
@@ -276,13 +301,18 @@ button {
   margin: 0 auto;
   display: block;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 700ms, tranform 1000ms;
+  
+  
 }
 
 .butt:hover,
 .butt:focus {
   color: #fff;
   background-color: #117504;
+  transform: scale(1.5);
+  
+  
 }
 .butt:active {
   color: #fff;
@@ -309,7 +339,14 @@ button {
 
 .sistem-rr2x-bord {
   max-width: 1440px;
-  height: 250px;
+  height: 300px;
+  background-image: url(/images/HighCout-Super-Soy.jpg), 
+  url(/images/reklam.png), 
+  url(/images/soya-usd.jpg);
+  background-position: left center, center, right center;
+  background-size: 500px, 400px, 500px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .sistem-rr2x-list {
@@ -390,7 +427,7 @@ button {
   text-align: justify;
   color: #f0f0f3;
   text-indent: 24px;
-  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.984);
+  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.984);
 }
 
 .section-two-h-oen {
@@ -410,22 +447,6 @@ button {
   width: 300px;
   align-items: flex-start;
   margin-top: 70px;
-}
-
-.logo-rr2x {
-}
-
-.box {
-  width: 150px;
-  height: 150px;
-
-  border: 5px solid #f44336;
-  padding: 30px;
-  margin: 40px;
-  background-color: #ffeb3b;
-}
-.box:hover {
-  border-color: cyan;
 }
 
 /* =================section-three=================================*/
@@ -451,7 +472,7 @@ button {
 .section-three-items {
 }
 
-/* =================section-three=================================*/
+/* =================section-three  4 modul =================================*/
 
 .benefits {
   display: flex;
@@ -490,19 +511,108 @@ button {
   color: #acd8e9;
   border: 2px solid rgb(245, 5, 5);
   width: calc((100% - 10px * 4) / 3);
+  box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
 .first {
   background-color: #22d60a;
+   box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
+    0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
 }
 .second {
-  background-color: chocolate;
+  background-image: linear-gradient(blue 0 50%, rgb(239, 243, 8) 50% 100%);
   flex-grow: 3;
 }
 .thirdht {
   background-color: aqua;
+  background-image: linear-gradient(red,  transparent)
 }
 
 .forth {
-  background-color: #f1091d;
+  background-image: radial-gradient(blue transparent);
   flex-grow: 5;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: tomato;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  /*  Set transition values  */
+  transition-property: background-color, transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.box:hover {
+  background-color: teal;
+  transform: rotate(180deg);
+}
+
+/*
+body777 {
+  background-color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.wrapper777 {
+  width: var(--wrapper-width);
+  height: var(--wrapper-width);
+  line-height: var(--wrapper-width);
+  margin: auto;
+  background: #fff url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat center;
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.controls {
+  width: var(--wrapper-width);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+button777 {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 20px;
+  padding: 8px 30px;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+button777:hover {
+  transform: scale(1.03);
+}
+
+.label777 {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
 }
